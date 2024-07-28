@@ -33,6 +33,10 @@ The `PlayerVisibilityState` enum defines the different visibility states for the
 
 The `VisibilityChecker` class contains the logic to determine the player's visibility state by checking for obstructions from nearby NPCs and game objects. It calculates the coverage ratio and categorizes it into one of the defined visibility states. It also provides methods to draw the visibility state on the screen.
 
+## Known Issues
+
+- **Z Coordinate Limitations**: Due to the DreamBot API, the script cannot grab objects from other levels (Z coordinates). This means it does not take into consideration objects that are above or below the player's current level when calculating player visibility.
+
 ## How to Run
 
 1. Clone the repository to your local machine.

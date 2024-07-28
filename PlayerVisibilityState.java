@@ -1,0 +1,6 @@
+public enum PlayerVisibilityState {
+    FULLY_VISIBLE,
+    LESS_THAN_HALF_OBSTRUCTED,
+    MORE_THAN_HALF_OBSTRUCTED,
+    FULLY_OBSTRUCTED
+}

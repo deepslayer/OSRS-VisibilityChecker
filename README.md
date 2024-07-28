@@ -12,6 +12,13 @@ The script defines four different visibility states for the player character:
 
 The script continuously checks the player's visibility and logs the current state. It also provides visual feedback on the screen.
 
+## Usefulness
+
+This script can help in several ways:
+- **Resource Gathering Bots**: Maintain visibility while gathering resources like mining, fishing, or woodcutting and avoiding obstructions as a human would.
+- **Camera**: Help the bot to adjust and remain visible, mimicking how a human player would react.
+- **Camera Adjustments**: Extend the script to automatically adjust the camera angle to maintain player visibility.
+
 ## Classes
 
 ### Main.java
@@ -32,5 +39,3 @@ The `VisibilityChecker` class contains the logic to determine the player's visib
 2. Open the project in your preferred Java IDE.
 3. Make sure you have the DreamBot client and API properly set up in your development environment.
 4. Run the `Main` class as a DreamBot script.
-
-

@@ -10,9 +10,12 @@ import org.dreambot.api.wrappers.interactive.FloorDecoration;
 import java.awt.*;
 import java.awt.geom.Area;
 import java.awt.geom.Rectangle2D;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class VisibilityChecker {
+    private static final Set<String> FLOOR_DECORATION_NAMES = new HashSet<>();
 
     public PlayerVisibilityState getPlayerVisibilityState() {
         Player player = Players.getLocal();
@@ -144,7 +147,13 @@ public class VisibilityChecker {
         return bounds.getWidth() * bounds.getHeight();
     }
 
+    static {
+        FLOOR_DECORATION_NAMES.add("Daisies");
+        FLOOR_DECORATION_NAMES.add("Flowers");
+        // Add more names to filter as needed
+    }
+
     private boolean isFloorDecoration(GameObject gameObject) {
-        return gameObject instanceof FloorDecoration;
+        return gameObject instanceof FloorDecoration || FLOOR_DECORATION_NAMES.contains(gameObject.getName());
     }
 }

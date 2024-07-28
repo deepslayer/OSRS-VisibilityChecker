@@ -31,7 +31,8 @@ The `PlayerVisibilityState` enum defines the different visibility states for the
 
 ### VisibilityChecker.java
 
-The `VisibilityChecker` class contains the logic to determine the player's visibility state by checking for obstructions from nearby NPCs and game objects. It calculates the coverage ratio and categorizes it into one of the defined visibility states. It also provides methods to draw the visibility state on the screen.
+The `VisibilityChecker` class contains the logic to determine the player's visibility state by checking for obstructions from nearby NPCs and game objects. It calculates the coverage ratio and categorizes it into one of the defined visibility states. It also provides methods to draw the visibility state on the screen. Additionally, you can add custom game objects to the list of floor decorations to exclude them from visibility checks.
+
 
 ## Known Issues
 

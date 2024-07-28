@@ -150,6 +150,7 @@ public class VisibilityChecker {
     static {
         FLOOR_DECORATION_NAMES.add("Daisies");
         FLOOR_DECORATION_NAMES.add("Flowers");
+        FLOOR_DECORATION_NAMES.add("Fire");
         // Add more names to filter as needed
     }
 
